@@ -1,0 +1,75 @@
+body {
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  /* or 25px */
+  letter-spacing: 0.02em;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  background: #c6c6c6;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+header a.logo {
+  font-weight: 800;
+}
+
+.admin .item img {
+  height: 100%;
+  width: auto;
+}
+
+.admin .item, .admin .item .buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.admin .item {
+  height: 64px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.admin .item .buttons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.admin .item .buttons .edit, .admin .item .buttons .delete, .admin .item .buttons .apply {
+  height: 64px;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.admin .item .buttons .edit.hide, .admin .item .buttons .delete.hide, .admin .item .buttons .apply.hide {
+  display: none;
+}
+.admin .item .buttons .edit:hover, .admin .item .buttons .delete:hover, .admin .item .buttons .apply:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.admin .item .buttons .edit i {
+  transform: rotate(-45deg) scale(0.7);
+  margin: auto 5px;
+}
+.admin .item .buttons .delete i {
+  transform: scale(0.7);
+  margin: auto 5px;
+}
